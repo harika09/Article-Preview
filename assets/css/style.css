@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+
+}
+body{
+    background-color: #ecf2f8;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+.article__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 730px;
+    height: 280px;
+}
+
+/* Drawer img*/
+.article__container .drawer__img{
+    width: 285px;
+    height: 280px;
+    border-radius: 10px 0 0 10px;
+}
+
+
+
+/* Profile Reviews */
+.review{
+    padding: 20px 30px;
+    background-color: #ffff;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+}
+
+.review h3{
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.3rem;
+    width: 18em;
+    margin-bottom: 10px;
+    color: #48556a;
+}
+
+.review p{
+    margin-bottom: 20px;
+    font-size: .86rem;
+    color: #6d7f97;
+    line-height: 1.5rem;
+    width: 100%;
+}
+
+/*User Profile*/
+
+.user__profile{
+    height: 50px;
+    position: relative;
+    top: -5px
+}
+.review .user__profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review .user__profile h4{
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+    color: #48556a;
+}
+
+.review .user__profile span{
+    position: relative;
+    font-size: .8rem;
+    font-family: 'Manrope', sans-serif;
+    color: #9eafc2;
+    left: 60px;
+    bottom: 52px
+}
+
+/* Share Button */
+.btn__share{
+    padding: 5px 5px;
+    float: right;
+    color:  #48556a;
+    background-color: #ecf2f8;
+	position: relative;
+    left: -35px;
+    padding: 10px 10px;
+    bottom: 70px;
+    border-radius: 50%;
+    border: none;
+    transition: .3s;
+    outline: none;
+    cursor: pointer;  
+}
+
+
+
+
+/* Social */
+.share{
+    display: none;
+    position: relative;
+    padding: 10px 60px;
+    background-color: #48556a;
+    border-radius: .5rem;
+    left:  196px;
+    bottom: 135px;
+    width: 70%;
+}
+
+.share::before{
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #48556a;
+  border-bottom: 10px solid transparent;
+  right: 45%;
+  bottom: -20px;
+}
+.social__icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share h3{
+    margin-right: 10px;
+    font-size: 1.3rem;
+    width: 50%;
+    position: relative;
+    top: 4px;
+    left: -20px;
+    color: #6d7f97;
+    letter-spacing: 3px;
+
+}
+
+.share .facebook{
+    margin-right: 10px;
+}
+
+.share .twitter{
+    margin-right: 10px;
+}
+
+.share .pintererst{
+    margin-right: 10px;
+}
+
+
+
+
+@media screen and (max-width: 900px){
+
+    .container{
+        position: relative;
+        bottom: 160px;
+    }
+   .article__container{
+       display: inline-block;
+       width: 350px;
+       height: 355px;
+     
+   }
+   
+   .review{
+       padding: 50px 20px;
+       border-radius: 0 0 10px 10px;
+   }
+   .review h3{
+       width: 100%;
+      font-size: 1.2rem;
+   }
+   .review p{
+       font-size: 1rem;
+   }
+
+   .user__profile img{
+       position: relative;
+       top:20px
+   }
+
+   .user__profile h4, span{
+       position: relative;
+       top: -30px;
+   }
+
+
+   /* Image */
+   .article__container .drawer__img{
+       position: relative;
+       width: 350px;
+       border-radius: 10px 10px 0 0;
+       top: 20px;
+   }
+
+   .btn__share{
+       position: absolute;
+       bottom: -13px;
+       left: 250px;
+       z-index: 100;
+       font-size: .8rem;
+       background-color:  #6d7f97;
+   }
+
+   .share{
+       bottom: 55px;
+       left: -20px;
+       border-radius: 0 0 10px 10px;
+       width: 113%;
+       height: 85px;
+       z-index: 1;
+   
+   }
+
+
+   .share::before{
+       display: none;
+   }
+
+   .social__icons{
+       position: relative;
+       left: 30px;
+       bottom: -20px;
+       width: 30%;
+   }
+
+   .social__icons h3{
+       font-size: 15px;
+       margin: 0 10px;
+       padding-left: 10px;
+   }
+
+   .facebook, .twitter, .pinterest{
+       position: relative;
+       top: 5px;
+       margin-right: 20px;
+   }
+
+   .social__icons img{
+       height: 25px;
+   }
+}
+
+@media screen and (max-width: 600px){
+    .container{
+        padding: 20px 40px;
+       
+    }
+
+}
